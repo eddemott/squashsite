@@ -1,0 +1,41 @@
+{
+  "name": "squashsite_server",
+  "version": "0.0.1",
+  "description": "website for squash team",
+  "author": "Ed De Mott",
+  "licenses": "MIT",
+  "repository": {
+    "type": "git",
+    "pathPrefix": "../",
+    "url": "git@github.com:eddemott/squashsite.git"
+  },
+  "dependencies": {
+		"hapi": "latest",
+		"catbox": "latest",
+		"joi": "latest",
+		"lodash": "latest",
+		"request": "latest",
+		"q": "latest",
+		"redis": "latest",
+		"winston": "latest"
+},
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-watch": "~0.4.4",
+    "grunt-jasmine-node": "~0.1.0",
+    "grunt-jasmine-node-coverage": "~0.1.6",
+    "grunt-jasmine-node-coverage-validation": "0.0.4",
+    "grunt-ngdocs": "~0.1.8",
+    "grunt-notify": "~0.2.17",
+    "grunt-plato": "~0.2.1",
+    "istanbul": "~0.1.44",
+    "load-grunt-tasks": "~0.2.0",
+    "rewire": "~1.1.3",
+    "sinon": "~1.7.2",
+    "supervisor": "~0.5.2"
+  },
+  "engines": {
+    "node": ">=0.10.25"
+  }
+}

@@ -1,0 +1,11 @@
+.DS_Store
+.idea
+*.log
+.sass-cache/
+report/
+docs/
+dist/vendor/**/
+dist/*.*
+node_modules/
+src/styles/css/
+src/app/templates.js

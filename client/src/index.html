@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+		<title>squashsite_client</title>
+		<base href="/">
+		<link rel="stylesheet" type="text/css" href="app.css" media="screen, projector, print">
+		<script src="vendor/foundation/js/vendor/modernizr.js"></script>
+	</head>
+
+	<body>
+		
+		
+		<!-- ng-view for main content -->
+		<div class="row wrapper" ng-view=""></div>
+		
+
+		<!-------------------------------- Scripts --------------------------------------------->
+
+		<!----------------------------  Vendor Scripts  ---------------------------------------->
+		<script type="text/javascript" src="vendor/angular/angular.min.js"></script>
+		<script type="text/javascript" src="vendor/angular-route/angular-route.min.js"></script>
+		
+		
+
+		<!----------------------------  Application Script  ------------------------------------>
+		<script type="text/javascript" src="app.js"></script>
+	</body>
+</html>
