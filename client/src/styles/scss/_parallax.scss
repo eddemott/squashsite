@@ -1,0 +1,24 @@
+.bcg {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+#slide-1 .bcg {
+    background-image:url('assets/img/bcg_slide-1.jpg')
+}
+#slide-2 .bcg {
+    background-image:url('assets/img/bcg_slide-2.jpg')
+}
+#slide-3 .bcg {
+    background-image:url('assets/img/bcg_slide-3.jpg')
+}
+#slide-4 .bcg {
+    background-image:url('assets/img/bcg_slide-4.jpg')
+}
+#slide-5 .bcg {
+    background-image:url('assets/img/bcg_slide-5.jpg')
+}

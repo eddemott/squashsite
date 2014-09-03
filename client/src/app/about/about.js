@@ -2,31 +2,31 @@
 
 /**
  * @ngdoc function
- * @name ng.module:demo
+ * @name ng.module:about
  * @function
  *
  * @description
  * [add a description]
  *
  */
-angular.module('demo', [])
+angular.module('about', [])
 
 	/**
 	 * @ngdoc function
-	 * @name ng.controller:demoCtrl
+	 * @name ng.controller:AboutCtrl
 	 * @function
 	 *
 	 * @description
 	 * [add a description]
 	 *
 	 */
-	.controller('DemoCtrl', ['$scope', function ($scope) {
-		$scope.msg = 'This is the DemoCtrl controller';
+	.controller('AboutCtrl', ['$scope', function ($scope) {
+		$scope.msg = 'This is the AboutCtrl controller';
 	}])
 
 	/**
 	 * @ngdoc function
-	 * @name ng.factory:demoFactory
+	 * @name ng.factory:aboutFactory
 	 * @function
 	 *
 	 * @description
@@ -35,7 +35,7 @@ angular.module('demo', [])
 	 * @returns {string} A new instance of this factory.
 	 *
 	 */
-	.factory('demoFactory', [function () {
+	.factory('aboutFactory', [function () {
 		// Service logic
 		// ...
 
