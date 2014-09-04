@@ -3,7 +3,6 @@
 
 	<head>
 		<meta charset="utf-8">
-		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" /> -->
 		<title>Britannia Squash Team</title>
 		<base href="/">
 		<link rel="stylesheet" type="text/css" href="app.css" media="screen, projector, print">
@@ -11,27 +10,44 @@
 	</head>
 
 <body>
+<div id="skrollr-body">
+	<header class="header row">
+		<nav class="navigation small-12" ng-include="'app/navigation/navigation.view.html'"></nav>
+	</header>
 
-<section id="slide-1" class="homeSlide">
-    <div class="bcg" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#slide-1">
-    </div>
-</section>
-<section id="slide-2" class="homeSlide">
-    <div class="bcg" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#slide-2">
-    </div>
-</section>
-<section id="slide-3" class="homeSlide">
-    <div class="bcg" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#slide-3">
-    </div>
-</section>
-<section id="slide-4" class="homeSlide">
-    <div class="bcg" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#slide-4">
-    </div>
-</section>
-<section id="slide-5" class="homeSlide">
-    <div class="bcg" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#slide-5">
-    </div>
-</section>
+	<section id="slide-1" class="homeSlide row">
+		<div class="bcg small-12 columns" ng-view="" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#slide-1"></div>
+	</section>
+
+	<section id="slide-2" class="homeSlide row">
+		<div class="bcg small-12 columns" ng-include="'app/find/find.view.html'" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#slide-2"></div>
+	</section>
+
+	<section id="slide-3" class="homeSlide row">
+		<div class="bcg small-12 columns" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#slide-3"></div>
+	</section>
+
+	<section id="slide-4" class="homeSlide row">
+		<div class="bcg small-12 columns" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#slide-4"></div>
+	</section>
+
+	<section id="slide-5" data-menu-offset="-50" class="homeSlide row">
+		<div class="bcg small-12 columns" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#slide-5"></div>
+	</section>
+</div>
+
+	
+		<!----------------------------  Vendor Scripts  ---------------------------------------->
+		<script type="text/javascript" src="vendor/angular/angular.min.js"></script>
+		<script type="text/javascript" src="vendor/angular-route/angular-route.min.js"></script>
+
+		<script src="vendor/foundation/js/vendor/jquery.js"></script>
+  	<script src="vendor/foundation/js/foundation/foundation.js"></script>
+		<script src="vendor/foundation/js/foundation/foundation.topbar.js"></script>
+
+		<script>
+    	$(document).foundation();
+  	</script>
 
 		<!-------------------------------- Scripts -------------------------------------------->
 
@@ -39,11 +55,19 @@
 		<script>window.jQuery || document.write('<script src="assets/lib/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 		<script src="assets/lib/skrollr/imagesloaded.js"></script>
 		<script src="assets/lib/skrollr/skrollr.js"></script>
+		<script src="assets/lib/skrollr/skrollr.min.js"></script>
+		<script src="assets/lib/skrollr/skrollr.menu.js"></script>
 		<script src="assets/lib/skrollr/_main.js"></script>
 
-		<!----------------------------  Vendor Scripts  ---------------------------------------->
-		<script type="text/javascript" src="vendor/angular/angular.min.js"></script>
-		<script type="text/javascript" src="vendor/angular-route/angular-route.min.js"></script>
+		<script type="text/javascript">
+			setTimeout(function() {
+				var s = skrollr.init({
+					forceHeight: false
+				});
+
+				skrollr.menu.init(s);
+			}, 500);
+		</script>
 		
 		<!----------------------------  Application Script  ------------------------------------>
 		<script type="text/javascript" src="app.js"></script>
